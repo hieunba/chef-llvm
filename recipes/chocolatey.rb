@@ -17,7 +17,10 @@
 # limitations under the License.
 include_recipe 'chocolatey'
 
+package_name = node['llvm']['package_name']
+
 chocolatey_package 'LLVM' do
+  package_name package_name
   action :install
   version node['llvm']['chocolatey']['version']
 end
