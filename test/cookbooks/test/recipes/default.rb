@@ -1,6 +1,6 @@
 #
 # Cookbook:: test
-# Recipe:: setup
+# Recipe:: default
 #
 # Copyright:: 2019, Nghiem Ba Hieu
 #
@@ -18,5 +18,5 @@
 if node['llvm']['install_method'] =~ /chocolatey/
   include_recipe 'llvm::chocolatey'
 else
-  include_recipe 'llvm::setup'
+  include_recipe 'llvm::package'
 end

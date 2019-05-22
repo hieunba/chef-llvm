@@ -27,3 +27,10 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
+  - name: package
+    run_list:
+      - recipe[test::package]
+    verifier:
+      inspec_tests:
+        - test/smoke/package
+    attributes:

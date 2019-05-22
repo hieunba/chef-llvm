@@ -18,5 +18,5 @@
 if node['llvm']['install_method'] =~ /chocolatey/
   include_recipe 'llvm::chocolatey'
 else
-  include_recipe 'llvm::setup'
+  include_recipe 'llvm::package'
 end
