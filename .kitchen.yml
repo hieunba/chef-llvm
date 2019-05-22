@@ -27,6 +27,13 @@ suites:
       inspec_tests:
         - test/smoke/default
     attributes:
+  - name: chocolatey
+    run_list:
+      - recipe[test::chocolatey]
+    verifier:
+      inspec_tests:
+        - test/smoke/chocolatey
+    attributes:
   - name: package
     run_list:
       - recipe[test::package]
