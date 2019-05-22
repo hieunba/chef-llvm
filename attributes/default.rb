@@ -5,3 +5,4 @@ default['llvm']['source'] = package_source
 default['llvm']['checksum'] = package_checksum
 default['llvm']['install_method'] = 'chocolatey'
 default['llvm']['chocolatey']['version'] = '6.0.0.20180508'
+default['llvm']['package_name'] = 'LLVM'
