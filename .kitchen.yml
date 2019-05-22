@@ -16,7 +16,7 @@ verifier:
 platforms:
   - name: windows10pro
     driver:
-      name: hieunb/windows10pro
+      box: hieunb/windows10pro
       communication: winrm
 
 suites:
