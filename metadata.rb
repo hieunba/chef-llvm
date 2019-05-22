@@ -4,7 +4,7 @@ maintainer_email 'hi3unb@gmail.com'
 license 'Apache-2.0'
 description 'Installs/Configures llvm'
 long_description 'Installs/Configures llvm'
-version '0.1.0'
+version '0.2.0'
 chef_version '>= 12.6' if respond_to?(:chef_version)
 
 supports 'windows'
